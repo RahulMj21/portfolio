@@ -21,7 +21,7 @@ export default function RootLayout({
             <body
                 className={cn(
                     inter.className,
-                    "bg-color-dark overflow-x-hidden text-white"
+                    "bg-[#030014] overflow-x-hidden overflow-y-auto text-white"
                 )}
             >
                 <StarCanvas />

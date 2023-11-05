@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <main className="h-full w-full">
             <Header />
-            <div className="flex flex-col gap-20 h-[53.125rem]">
+            <div className="flex flex-col gap-20">
                 <Hero />
             </div>
         </main>

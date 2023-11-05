@@ -3,10 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --color-dark: #030014;
-}
-
 .cursive {
     font-family: "Cedarville Cursive", cursive;
 }

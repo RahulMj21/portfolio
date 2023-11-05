@@ -12,12 +12,12 @@ import Image from "next/image";
 
 const HeroContent = () => {
     return (
-        <motion.div
-            initial="hidden"
-            animate="visible"
-            className="mt-40 w-full z-[20]"
-        >
-            <Container className="flex flex-col lg:flex-row gap-6 items-center justify-center">
+        <Container>
+            <motion.div
+                initial="hidden"
+                animate="visible"
+                className="relative flex flex-col lg:flex-row items-center justify-center mt-40 w-full z-[20]"
+            >
                 <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
                     <motion.div
                         variants={slideInFromTop(0.5)}
@@ -65,8 +65,8 @@ const HeroContent = () => {
                         width={650}
                     />
                 </motion.div>
-            </Container>
-        </motion.div>
+            </motion.div>
+        </Container>
     );
 };
 
