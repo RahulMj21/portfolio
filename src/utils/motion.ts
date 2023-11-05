@@ -3,7 +3,7 @@ export const slideInFromLeft = (delay: number) => ({
     visible: {
         x: 0,
         opacity: 1,
-        transition: { delay: delay, duration: 0.4 },
+        transition: { delay: delay, duration: 0.5 },
     },
 });
 export const slideInFromRight = (delay: number) => ({
@@ -11,7 +11,7 @@ export const slideInFromRight = (delay: number) => ({
     visible: {
         x: 0,
         opacity: 1,
-        transition: { delay: delay, duration: 0.4 },
+        transition: { delay: delay, duration: 0.5 },
     },
 });
 
@@ -20,7 +20,7 @@ export const slideInFromTop = (delay: number) => ({
     visible: {
         y: 0,
         opacity: 1,
-        transition: { delay, duration: 0.4 },
+        transition: { delay, duration: 0.5 },
     },
 });
 export const slideInFromBottom = (delay: number) => ({
@@ -28,6 +28,6 @@ export const slideInFromBottom = (delay: number) => ({
     visible: {
         y: 0,
         opacity: 1,
-        transition: { delay, duration: 0.4 },
+        transition: { delay, duration: 0.5 },
     },
 });
