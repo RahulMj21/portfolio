@@ -3,6 +3,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 0.3rem;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #6d6d6d;
+    border-radius: 0.3rem;
+}
+/* scrollbar */
+
 .cursive {
     font-family: "Cedarville Cursive", cursive;
 }
