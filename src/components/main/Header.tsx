@@ -11,7 +11,7 @@ const Header = () => {
         <motion.header
             initial="hidden"
             animate="visible"
-            className="fixed top-0 w-screen shadow-lg shadow-[#2A0E61]/50 bg-[#03001471] backdrop-blur-md z-50"
+            className="fixed top-0 w-screen shadow-lg shadow-[#2A0E61]/50 bg-[#03001434] backdrop-blur-md z-50"
         >
             <motion.div variants={slideInFromBottom(0.3)}>
                 <Container className="h-20 flex items-center justify-between w-full">
