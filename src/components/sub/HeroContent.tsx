@@ -16,7 +16,7 @@ const HeroContent = () => {
             <motion.div
                 initial="hidden"
                 animate="visible"
-                className="relative flex flex-col lg:flex-row items-center justify-center mt-40 w-full z-[20]"
+                className="relative flex flex-col lg:flex-row gap-5 mt-40 w-full z-[20]"
             >
                 <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
                     <motion.div
@@ -57,7 +57,10 @@ const HeroContent = () => {
                         Download CV
                     </motion.a>
                 </div>
-                <motion.div variants={slideInFromRight(0.8)} className="">
+                <motion.div
+                    variants={slideInFromRight(0.8)}
+                    className="flex justify-center"
+                >
                     <Image
                         src="/image/mainIconsDark.svg"
                         alt="Hero Icons"

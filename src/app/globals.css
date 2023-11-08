@@ -4,6 +4,9 @@
 @tailwind utilities;
 
 /* scrollbar */
+html {
+    scroll-behavior: smooth;
+}
 ::-webkit-scrollbar {
     width: 0.3rem;
 }
