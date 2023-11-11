@@ -24,9 +24,9 @@ const HeroContent = () => {
                         className="welcome-box py-2 px-3 border border-[#7042f88b] opacity-90 rounded-full flex items-center gap-2"
                     >
                         <SparklesIcon className="text-purple-400 h-5 w-5" />
-                        <h1 className="welcome-text text-[13px]">
+                        <p className="welcome-text text-[14px] leading-[14px]">
                             Full-Stack Developer
-                        </h1>
+                        </p>
                     </motion.div>
                     <motion.div
                         variants={slideInFromLeft(0.5)}
@@ -52,9 +52,10 @@ const HeroContent = () => {
                     </motion.p>
                     <motion.a
                         variants={slideInFromLeft(1)}
-                        className="button-primary rounded-lg mt-6 px-7 py-3 w-max cursor-pointer"
+                        href="#about"
+                        className="button-primary font-medium tracking-wide rounded-lg mt-6 px-7 py-3 w-max cursor-pointer"
                     >
-                        Download CV
+                        My Introduction
                     </motion.a>
                 </div>
                 <motion.div

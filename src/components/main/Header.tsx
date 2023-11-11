@@ -23,25 +23,35 @@ const Header = () => {
             animate="visible"
             className={cn(
                 "fixed top-0 w-screen shadow-lg shadow-[#2A0E61]/50 bg-[#03001434] backdrop-blur-md z-50",
-                isScrolled && "bg-transparent shadow-none backdrop-blur-none"
+                isScrolled &&
+                    "md:bg-transparent md:shadow-none md:backdrop-blur-none"
             )}
         >
             <motion.div variants={slideInFromBottom(0.3)}>
                 <Container className="h-20 flex items-center justify-between">
-                    {!isScrolled && (
-                        <Link href="/">
-                            <Logo />
-                        </Link>
-                    )}
+                    {/* {!isScrolled && ( */}
+                    <Link
+                        href="/"
+                        className={cn(
+                            "inline-block",
+                            isScrolled && "md:hidden md:invisible"
+                        )}
+                    >
+                        <Logo />
+                    </Link>
+                    {/* )} */}
                     <Navbar isScrolled={isScrolled} />
-                    {!isScrolled && (
-                        <Link
-                            href="#contact"
-                            className="button-primary rounded-md px-5 py-2 w-max cursor-pointer"
-                        >
-                            Contact
-                        </Link>
-                    )}
+                    {/* {!isScrolled && ( */}
+                    <Link
+                        href="#contact"
+                        className={cn(
+                            "button-primary rounded-md px-5 py-2 w-max cursor-pointer",
+                            isScrolled && "md:hidden md:invisible"
+                        )}
+                    >
+                        Contact
+                    </Link>
+                    {/* )} */}
                 </Container>
             </motion.div>
         </motion.header>

@@ -1,6 +1,9 @@
 import Container from "@/components/common/Container";
+import About from "@/components/main/About";
 import Header from "@/components/main/Header";
 import Hero from "@/components/main/Hero";
+import Skills from "@/components/main/Skills";
+import Work from "@/components/main/Work";
 
 export default function Home() {
     return (
@@ -9,15 +12,9 @@ export default function Home() {
             <div className="flex flex-col gap-20">
                 <Hero />
                 <Container>
-                    <div id="about" className="h-screen">
-                        About
-                    </div>
-                    <div id="skills" className="h-screen">
-                        Skills
-                    </div>
-                    <div id="work" className="h-screen">
-                        Work
-                    </div>
+                    <About />
+                    <Skills />
+                    <Work />
                     <div id="contact" className="h-screen">
                         Contact
                     </div>
