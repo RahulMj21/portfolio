@@ -3,6 +3,7 @@
 import { slideInFromLeft, slideInFromTop } from "@/utils/motion";
 import { UserIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const About = () => {
     return (
@@ -13,10 +14,23 @@ const About = () => {
             viewport={{ once: true }}
             className="relative mt-24 pb-24 flex flex-col-reverse lg:flex-row justify-between gap-5 z-[20]"
         >
-            <div className="flex-1">Left Image</div>
+            <motion.div
+                variants={slideInFromLeft(0.8)}
+                className="flex-1 flex items-center"
+            >
+                <div className="z-1 relative rounded-md border-2 border-[#7042f88b] before:absolute before:h-full before:w-full before:bg-gradient-to-br before:from-purple-500 before:to-cyan-500 before:blur-xl -z-1">
+                    <Image
+                        src="/image/rahul.jpg"
+                        alt="Rahul Mondal Fullstack Developer"
+                        height={0}
+                        width={254}
+                        className="relative rounded-sm"
+                    />
+                </div>
+            </motion.div>
             <div className="flex flex-col gap-4 flex-1">
                 <motion.div
-                    variants={slideInFromTop(0.5)}
+                    variants={slideInFromTop(0)}
                     className="welcome-box py-2 px-3 border border-[#7042f88b] opacity-90 rounded-full flex items-center gap-2"
                 >
                     <UserIcon className="text-purple-400 h-5 w-5" />

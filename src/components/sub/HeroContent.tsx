@@ -20,7 +20,7 @@ const HeroContent = () => {
             >
                 <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
                     <motion.div
-                        variants={slideInFromTop(0.5)}
+                        variants={slideInFromTop(0)}
                         className="welcome-box py-2 px-3 border border-[#7042f88b] opacity-90 rounded-full flex items-center gap-2"
                     >
                         <SparklesIcon className="text-purple-400 h-5 w-5" />
