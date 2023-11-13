@@ -1,6 +1,10 @@
 "use client";
 
-import { slideInFromLeft, slideInFromTop } from "@/utils/motion";
+import {
+    slideInFromLeft,
+    slideInFromRight,
+    slideInFromTop,
+} from "@/utils/motion";
 import { UserIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -12,19 +16,19 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="relative mt-24 pb-24 flex flex-col-reverse lg:flex-row justify-between gap-5 z-[20]"
+            className="relative mt-24 pb-24 flex flex-col-reverse lg:flex-row justify-between gap-20 z-[20]"
         >
             <motion.div
                 variants={slideInFromLeft(0.8)}
-                className="flex-1 flex items-center"
+                className="flex-1 flex items-center justify-center"
             >
-                <div className="z-1 relative rounded-md border-2 border-[#7042f88b] before:absolute before:h-full before:w-full before:bg-gradient-to-br before:from-purple-500 before:to-cyan-500 before:blur-xl -z-1">
+                <div className="z-1 relative rounded-2xl border-2 border-[#7042f88b] before:absolute before:h-full before:w-full before:bg-gradient-to-br before:from-purple-500 before:to-cyan-500 before:blur-2xl -z-1">
                     <Image
                         src="/image/rahul.jpg"
                         alt="Rahul Mondal Fullstack Developer"
                         height={0}
-                        width={254}
-                        className="relative rounded-sm"
+                        width={350}
+                        className="relative rounded-xl"
                     />
                 </div>
             </motion.div>
@@ -39,7 +43,7 @@ const About = () => {
                     </p>
                 </motion.div>
                 <motion.div
-                    variants={slideInFromLeft(0.5)}
+                    variants={slideInFromRight(0.5)}
                     className="whitespace-nowrap flex-wrap flex flex-col gap-3 font-semibold text-5xl leading-[3.5rem] text-bold text-white max-w-[37.5rem] w-auto mt-5"
                 >
                     <span className="flex gap-3">
@@ -51,15 +55,16 @@ const About = () => {
                     Mondal.
                 </motion.div>
                 <motion.p
-                    variants={slideInFromLeft(0.8)}
+                    variants={slideInFromRight(0.8)}
                     className="max-w-[37.5rem] text-gray-400"
                 >
-                    I&apos;m a Full-Stack Developer. Flexible, hard worker,
-                    ready to learn and contribute to team success. Working
-                    confidently with a wide range of technologies.
+                    I&apos;m a passionate developer with a genuine interest in
+                    the web and the user experience. I am committed to learning
+                    new things to always be improving my skills and finding new
+                    approaches to solve problems.
                 </motion.p>
                 <motion.a
-                    variants={slideInFromLeft(1)}
+                    variants={slideInFromRight(1)}
                     className="button-primary font-medium tracking-wide rounded-lg mt-6 px-7 py-3 w-max cursor-pointer"
                 >
                     Download CV
