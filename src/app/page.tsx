@@ -1,5 +1,7 @@
 import Container from "@/components/common/Container";
 import About from "@/components/main/About";
+import Contact from "@/components/main/Contact";
+import Footer from "@/components/main/Footer";
 import Header from "@/components/main/Header";
 import Hero from "@/components/main/Hero";
 import Skills from "@/components/main/Skills";
@@ -15,9 +17,8 @@ export default function Home() {
                     <About />
                     <Skills />
                     <Work />
-                    <div id="contact" className="h-screen">
-                        Contact
-                    </div>
+                    <Contact />
+                    <Footer />
                 </Container>
             </div>
         </main>

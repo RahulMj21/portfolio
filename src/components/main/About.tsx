@@ -16,7 +16,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="relative mt-24 pb-24 flex flex-col-reverse lg:flex-row justify-between gap-20 z-[20]"
+            className="relative mt-20 lg:pt-24 pb-24 flex flex-col-reverse lg:flex-row justify-between gap-20 z-[20]"
         >
             <motion.div
                 variants={slideInFromLeft(0.8)}
