@@ -1,6 +1,6 @@
 "use client";
 
-import { slideInFromBottom, slideInFromTop } from "@/utils/motion";
+import { slideInFromBottom } from "@/utils/motion";
 import { motion } from "framer-motion";
 
 const Footer = () => {

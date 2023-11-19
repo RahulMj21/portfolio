@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <main className="h-full w-full">
             <Header />
-            <div className="flex flex-col gap-20">
+            <div className="flex flex-col gap-20 relative z-[20]">
                 <Hero />
                 <Container>
                     <About />
