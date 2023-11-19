@@ -3,6 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+input,
+textarea,
+a,
+button {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500;
+}
+
 /* scrollbar */
 html {
     scroll-behavior: smooth;
@@ -97,4 +104,7 @@ html {
 }
 .social-link {
     @apply fill-slate-300 hover:fill-purple-400 h-10 w-10 bg-slate-500/20 hover:bg-slate-400/20 flex items-center justify-center rounded-full transition-all;
+}
+.contact-input {
+    @apply bg-slate-800/50 py-2 px-4 rounded-full backdrop-blur-lg;
 }
