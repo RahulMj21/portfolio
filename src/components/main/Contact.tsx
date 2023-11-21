@@ -5,6 +5,7 @@ import ContactItem from "@/components/sub/ContactItem";
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import ContactSocial from "@/components/sub/ContactSocial";
 import ContactForm from "@/components/sub/ContactForm";
+import { slideInFromLeft, slideInFromTop } from "@/utils/motion";
 
 const Contact = () => {
     return (
@@ -13,21 +14,36 @@ const Contact = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="py-20 flex flex-col gap-10"
+            className="py-20 flex flex-col gap-14"
         >
-            <motion.h1 className="text-[2.2rem] sm:text-[3rem] md:text-[3.8rem] font-semibold text-center">
-                CONTACT <span className="text-purple-500">ME</span>
+            <motion.h1
+                variants={slideInFromTop(0.5)}
+                className="text-[2.2rem] sm:text-[3rem] md:text-[3.8rem] font-semibold text-center"
+            >
+                CONTACT
+                <span className="ml-4 bg-gradient-to-br bg-clip-text text-transparent from-purple-600 to-cyan-700">
+                    ME
+                </span>
             </motion.h1>
             <div className="flex flex-col lg:flex-row items-start gap-20">
                 <div className="flex flex-col gap-4 w-full lg:w-[30%]">
-                    <h2 className="text-[1.563rem] font-semibold">
+                    <motion.h2
+                        variants={slideInFromLeft(0.8)}
+                        className="text-[1.563rem] font-semibold"
+                    >
                         GET IN TOUCH
-                    </h2>
-                    <p className="text-gray-400 mb-6">
+                    </motion.h2>
+                    <motion.p
+                        variants={slideInFromLeft(0.9)}
+                        className="text-gray-400 mb-6"
+                    >
                         If you want to collaborate or have any project in your
                         mind, feel free to contact me.
-                    </p>
-                    <div className="flex align-center flex-wrap lg:flex-col w-full gap-8 lg:gap-5">
+                    </motion.p>
+                    <motion.div
+                        variants={slideInFromLeft(1)}
+                        className="flex align-center flex-wrap lg:flex-col w-full gap-8 lg:gap-5"
+                    >
                         <ContactItem
                             text="Address"
                             subText="Baruipur Kolkata, India"
@@ -49,7 +65,7 @@ const Contact = () => {
                                 <PhoneIcon className="h-4 w-5 mt-1 text-purple-500" />
                             }
                         />
-                    </div>
+                    </motion.div>
                     <ContactSocial />
                 </div>
                 <div className="w-full  lg:w-[70%]">

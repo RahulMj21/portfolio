@@ -7,7 +7,7 @@ input,
 textarea,
 a,
 button {
-    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500;
+    @apply outline-none focus-visible:ring-2 focus-visible:ring-purple-500;
 }
 
 /* scrollbar */

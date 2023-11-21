@@ -1,8 +1,10 @@
+import { slideInFromRight } from "@/utils/motion";
 import { RocketLaunchIcon } from "@heroicons/react/20/solid";
-
+import { motion } from "framer-motion";
 const ContactForm = () => {
     return (
-        <form
+        <motion.form
+            variants={slideInFromRight(1)}
             onSubmit={(e) => e.preventDefault()}
             className="flex flex-col w-full gap-4"
         >
@@ -26,7 +28,7 @@ const ContactForm = () => {
                 Send Message
                 <RocketLaunchIcon className="h-5 w-5 mt-1" />
             </button>
-        </form>
+        </motion.form>
     );
 };
 
