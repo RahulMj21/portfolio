@@ -9,14 +9,11 @@ import { slideInFromLeft, slideInFromTop } from "@/utils/motion";
 
 const Contact = () => {
     return (
-        <motion.section
-            id="contact"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="py-20 flex flex-col gap-14"
-        >
+        <section id="contact" className="py-20 flex flex-col gap-14">
             <motion.h1
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
                 variants={slideInFromTop(0.5)}
                 className="text-[2.2rem] sm:text-[3rem] md:text-[3.8rem] font-semibold text-center"
             >
@@ -25,7 +22,12 @@ const Contact = () => {
                     ME
                 </span>
             </motion.h1>
-            <div className="flex flex-col lg:flex-row items-start gap-20">
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="flex flex-col lg:flex-row items-start gap-20"
+            >
                 <div className="flex flex-col gap-4 w-full lg:w-[30%]">
                     <motion.h2
                         variants={slideInFromLeft(0.8)}
@@ -71,8 +73,8 @@ const Contact = () => {
                 <div className="w-full  lg:w-[70%]">
                     <ContactForm />
                 </div>
-            </div>
-        </motion.section>
+            </motion.div>
+        </section>
     );
 };
 

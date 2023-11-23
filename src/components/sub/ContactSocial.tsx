@@ -1,40 +1,25 @@
-import GithubIcon from "@/components/icons/GithubIcon";
-import TwitterIcon from "@/components/icons/TwitterIcon";
-import LinkdinIcon from "@/components/icons/LinkdinIcon";
-import Link from "next/link";
-import { motion } from "framer-motion";
+import { Socials } from "@/data";
 import { slideInFromBottom } from "@/utils/motion";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 const ContactSocial = () => {
     return (
         <div className="flex items-center gap-4 mt-5">
-            <motion.div variants={slideInFromBottom(1)}>
-                <Link
-                    className="social-link"
-                    target="_blank"
-                    href="https://github.com/RahulMj21"
+            {Socials.map((social, idx) => (
+                <motion.div
+                    key={social.id}
+                    variants={slideInFromBottom(1 + idx / 10)}
                 >
-                    <GithubIcon />
-                </Link>
-            </motion.div>
-            <motion.div variants={slideInFromBottom(1.1)}>
-                <Link
-                    className="social-link"
-                    target="_blank"
-                    href="https://twitter.com/RahulMJ21"
-                >
-                    <TwitterIcon />
-                </Link>
-            </motion.div>
-            <motion.div variants={slideInFromBottom(1.2)}>
-                <Link
-                    className="social-link"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/rahulmj21/"
-                >
-                    <LinkdinIcon />
-                </Link>
-            </motion.div>
+                    <Link
+                        className="social-link"
+                        target="_blank"
+                        href={social.link}
+                    >
+                        {social.icon}
+                    </Link>
+                </motion.div>
+            ))}
         </div>
     );
 };

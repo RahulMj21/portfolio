@@ -11,7 +11,14 @@ import { useEffect, useState } from "react";
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
 
+    // useEffect(() => {
+    // window.addEventListener("scroll", () => {
+    //     setIsScrolled(window.scrollY > 100);
+    // });
+    // }, []);
+
     useEffect(() => {
+        setIsScrolled(window.scrollY > 100);
         window.addEventListener("scroll", () => {
             setIsScrolled(window.scrollY > 100);
         });
@@ -29,7 +36,6 @@ const Header = () => {
         >
             <motion.div variants={slideInFromBottom(0.3)}>
                 <Container className="h-20 flex items-center justify-between">
-                    {/* {!isScrolled && ( */}
                     <Link
                         href="/"
                         className={cn(
@@ -39,9 +45,7 @@ const Header = () => {
                     >
                         <Logo />
                     </Link>
-                    {/* )} */}
                     <Navbar isScrolled={isScrolled} />
-                    {/* {!isScrolled && ( */}
                     <Link
                         href="#contact"
                         className={cn(
@@ -51,7 +55,6 @@ const Header = () => {
                     >
                         Contact
                     </Link>
-                    {/* )} */}
                 </Container>
             </motion.div>
         </motion.header>
