@@ -26,7 +26,7 @@ const WorkCard = ({ project: { title } }: Props) => {
                         alt="Project image"
                         height={194}
                         width={360}
-                        className="group-hover/card:scale-[1.05] duration-500 transition-all"
+                        className="group-hover/card:scale-[1.08] duration-500 transition-all"
                         loading="lazy"
                     />
                 </div>
