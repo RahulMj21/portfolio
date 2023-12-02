@@ -20,3 +20,52 @@ export const Socials: ISocial[] = [
         icon: <LinkdinIcon />,
     },
 ];
+
+export const SkillsData = [
+    {
+        title: "Tech I Know",
+        items: [
+            "/image/html.svg",
+            "/image/css.svg",
+            "/image/js.svg",
+            "/image/ts.svg",
+            "/image/react.svg",
+            "/image/nextjs.svg",
+            "/image/tailwind.svg",
+            "/image/mui.svg",
+            "/image/chakra-ui.svg",
+            "/image/framer-motion.svg",
+            "/image/redux.svg",
+            "/image/reactquery.svg",
+            "/image/trpc.svg",
+            "/image/graphql.svg",
+            "/image/nodejs.svg",
+            "/image/golang.svg",
+            "/image/mongodb.svg",
+            "/image/mysql.svg",
+            "/image/postgres.svg",
+            "/image/prisma.svg",
+            "/image/github.svg",
+            "/image/githubactions.svg",
+            "/image/docker.svg",
+        ],
+    },
+    {
+        title: "Currently Working With",
+        items: [
+            "/image/nextjs.svg",
+            "/image/tailwind.svg",
+            "/image/framer-motion.svg",
+            "/image/reactquery.svg",
+            "/image/trpc.svg",
+            "/image/golang.svg",
+            "/image/postgres.svg",
+            "/image/prisma.svg",
+            "/image/docker.svg",
+        ],
+    },
+    {
+        title: "Learning Now",
+        items: ["/image/golang.svg", "/image/framer-motion.svg"],
+    },
+];
