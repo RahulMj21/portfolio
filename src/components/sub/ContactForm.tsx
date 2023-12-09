@@ -1,3 +1,5 @@
+import FormError from "@/components/common/FormError";
+import { ContactInputs } from "@/data";
 import cn from "@/lib/cn";
 import { SendMailSchema, TSendMailInput } from "@/schemas";
 import { slideInFromRight } from "@/utils/motion";
@@ -7,6 +9,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
+
 const ContactForm = () => {
     const [formStatus, setFormStatus] = useState("");
     const {
@@ -28,10 +31,10 @@ const ContactForm = () => {
             });
             const data = await resp.json();
             if (data.status === "OK") {
-                toast.success("Your message has been sent successfully.");
+                toast.success("Message sent successfully.");
             }
         } catch (error) {
-            toast.error("Failed to send your message.");
+            toast.error("Failed to send message.");
         } finally {
             setFormStatus("sent");
             setTimeout(() => {
@@ -40,35 +43,43 @@ const ContactForm = () => {
             reset();
         }
     };
+
     return (
         <motion.form
             variants={slideInFromRight(1)}
             onSubmit={handleSubmit(onSubmit)}
             className="flex flex-col w-full gap-4"
         >
-            <div className="grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-x-5 gap-y-4">
-                <input
-                    className="contact-input"
-                    placeholder="Your Name"
-                    {...register("name")}
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(285px,1fr))] gap-x-5 gap-y-4">
+                {ContactInputs.map(({ key, placeholder, type }) => (
+                    <div
+                        key={key}
+                        className={cn(
+                            "relative",
+                            errors[key]?.message && "mb-4"
+                        )}
+                    >
+                        <input
+                            className="bg-slate-800/50 py-2 px-4 rounded-full backdrop-blur-lg w-full"
+                            placeholder={placeholder}
+                            type={type}
+                            {...register(key)}
+                        />
+                        <FormError message={errors[key]?.message} />
+                    </div>
+                ))}
+            </div>
+            <div className="relative">
+                <textarea
+                    className="bg-slate-800/50 backdrop-blur-xl py-2 px-4 rounded-xl max-h-[14rem] min-h-[14rem] w-full"
+                    placeholder="Message"
+                    {...register("message")}
                 />
-                <input
-                    className="contact-input"
-                    type="email"
-                    placeholder="Your Email"
-                    {...register("email")}
-                />
-                <input
-                    className="contact-input"
-                    placeholder="Subject"
-                    {...register("subject")}
+                <FormError
+                    className="top-full"
+                    message={errors.message?.message}
                 />
             </div>
-            <textarea
-                className="bg-slate-800/50 backdrop-blur-xl py-2 px-4 rounded-xl h-[14rem]"
-                placeholder="Message"
-                {...register("message")}
-            />
             <button
                 disabled={formStatus === "loading"}
                 className="button-primary overflow-hidden flex items-center gap-3 font-medium tracking-wide rounded-full mt-5 px-7 py-3 w-max cursor-pointer"

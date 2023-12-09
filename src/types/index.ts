@@ -8,3 +8,8 @@ export interface ISocial {
     link: string;
     icon: JSX.Element;
 }
+export interface IContactInput {
+    key: "name" | "email" | "subject";
+    type: "text" | "email";
+    placeholder: string;
+}

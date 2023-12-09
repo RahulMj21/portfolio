@@ -1,4 +1,4 @@
-import { IProject, ISocial } from "@/types";
+import { IContactInput, IProject, ISocial } from "@/types";
 import GithubIcon from "@/components/icons/GithubIcon";
 import TwitterIcon from "@/components/icons/TwitterIcon";
 import LinkdinIcon from "@/components/icons/LinkdinIcon";
@@ -68,4 +68,10 @@ export const SkillsData = [
         title: "Learning Now",
         items: ["/image/golang.svg", "/image/framer-motion.svg"],
     },
+];
+
+export const ContactInputs: IContactInput[] = [
+    { key: "name", type: "text", placeholder: "Your Name" },
+    { key: "email", type: "email", placeholder: "Your Email" },
+    { key: "subject", type: "text", placeholder: "Subject" },
 ];

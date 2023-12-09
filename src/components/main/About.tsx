@@ -46,7 +46,7 @@ const About = () => {
                     variants={slideInFromRight(0.5)}
                     className="whitespace-nowrap flex-wrap flex flex-col gap-3 font-semibold text-5xl leading-[3.5rem] text-bold text-white max-w-[37.5rem] w-auto mt-5"
                 >
-                    <span className="flex gap-3">
+                    <span className="flex gap-3 flex-wrap">
                         Hello! I&apos;m
                         <span className="whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                             Rahul
