@@ -6,10 +6,12 @@ import Header from "@/components/main/Header";
 import Hero from "@/components/main/Hero";
 import Skills from "@/components/main/Skills";
 import Work from "@/components/main/Work";
+import { Toaster } from "react-hot-toast";
 
 export default function Home() {
     return (
         <main className="h-full w-full">
+            <Toaster position="top-right" />
             <Header />
             <div className="flex flex-col gap-20 relative z-[20]">
                 <Hero />

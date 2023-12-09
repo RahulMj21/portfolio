@@ -7,7 +7,7 @@ import SkillCard from "@/components/sub/SkillCard";
 
 const Skills = () => {
     return (
-        <section id="skills" className="py-20 flex flex-col gap-24 md:mt-20">
+        <section id="skills" className="py-8 flex flex-col gap-24 md:my-28">
             {SkillsData.map(({ title, items }, idx) => {
                 const headingDelay = 0.5 + (idx / 10) * 2;
                 return (

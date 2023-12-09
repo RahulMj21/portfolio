@@ -26,6 +26,17 @@ html {
 }
 /* scrollbar */
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    background-color: transparent !important;
+}
+input:-webkit-autofill {
+    -webkit-text-fill-color: rgb(216, 216, 216) !important;
+}
+
 .cursive {
     font-family: "Cedarville Cursive", cursive;
 }
@@ -107,4 +118,93 @@ html {
 }
 .contact-input {
     @apply bg-slate-800/50 py-2 px-4 rounded-full backdrop-blur-lg;
+}
+
+.rocket-loading {
+    animation: animate-rocket-loading 1.5s ease infinite;
+}
+
+@keyframes animate-rocket-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    5% {
+        transform: rotate(-40deg);
+    }
+    10% {
+        transform: rotate(0deg);
+    }
+    15% {
+        transform: rotate(-40deg);
+    }
+    20% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-40deg);
+    }
+    30% {
+        transform: rotate(0deg);
+    }
+    35% {
+        transform: rotate(-40deg);
+    }
+    40% {
+        transform: rotate(0deg);
+    }
+    45% {
+        transform: rotate(-40deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    55% {
+        transform: rotate(-40deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    65% {
+        transform: rotate(-40deg);
+    }
+    70% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-40deg);
+    }
+    80% {
+        transform: rotate(0deg);
+    }
+    85% {
+        transform: rotate(-40deg);
+    }
+    90% {
+        transform: rotate(0deg);
+    }
+    95% {
+        transform: rotate(-40deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.rocket-launch {
+    animation: animate-rocket-launch 2s ease;
+}
+
+@keyframes animate-rocket-launch {
+    0% {
+        transform: rotate(50deg) translate(0%);
+    }
+    20% {
+        transform: rotate(-50deg) translate(50%);
+    }
+    40% {
+        transform: rotate(-50deg) translate(0%, 50%);
+    }
+    100% {
+        transform: rotate(50deg) translate(0%, -300%);
+    }
 }

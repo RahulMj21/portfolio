@@ -1,7 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export default function middleware(req: NextRequest) {
-    console.log("referrer :", req.referrer);
+    if (req.headers.get("origin") !== process.env.APP_URL) {
+        return NextResponse.json({ status: "fail" }, { status: 403 });
+    }
+
     return NextResponse.next();
 }
 
