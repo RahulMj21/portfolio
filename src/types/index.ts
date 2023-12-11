@@ -1,6 +1,10 @@
 export interface IProject {
     id: number;
     title: string;
+    description: string;
+    src: string;
+    githubUrl: string;
+    liveUrl: string;
 }
 
 export interface ISocial {

@@ -1,14 +1,27 @@
-import { IContactInput, IProject, ISocial } from "@/types";
 import GithubIcon from "@/components/icons/GithubIcon";
-import TwitterIcon from "@/components/icons/TwitterIcon";
 import LinkdinIcon from "@/components/icons/LinkdinIcon";
+import TwitterIcon from "@/components/icons/TwitterIcon";
+import { IContactInput, IProject, ISocial } from "@/types";
 
 export const Projects: IProject[] = [
-    { id: 1, title: "First Project" },
-    { id: 2, title: "Second Project" },
-    { id: 3, title: "Third Project" },
-    { id: 4, title: "Fourth Project" },
-    { id: 5, title: "Fifth Project" },
+    {
+        id: 1,
+        title: "Personal Portfolio",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur in officiis possimus consequatur quo, repudiandae cumque ab autem aspernatur",
+        src: "/image/project1.png",
+        githubUrl: "https://github.com/RahulMj21/portfolio",
+        liveUrl: "https://rahulmj21.com",
+    },
+    {
+        id: 2,
+        title: "Productivity App",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.Tenetur in officiis possimus consequatur quo, repudiandae cumque ab autem aspernatur",
+        src: "/image/project2.png",
+        githubUrl: "https://github.com/RahulMj21/tuneup",
+        liveUrl: "https://teunup.vercel.app/",
+    },
 ];
 
 export const Socials: ISocial[] = [
