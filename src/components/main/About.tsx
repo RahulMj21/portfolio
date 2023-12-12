@@ -59,11 +59,15 @@ const About = () => {
                     className="max-w-[37.5rem] text-gray-400"
                 >
                     I&apos;m a passionate developer with a genuine interest in
-                    the web and the user experience. I am committed to learning
-                    new things to always be improving my skills and finding new
-                    approaches to solve problems.
+                    the web and the user experience, specialized in Next.js and
+                    Node.js. I am committed to learning new things to always be
+                    improving my skills and finding new approaches to solve
+                    problems.
                 </motion.p>
                 <motion.a
+                    target="_blank"
+                    href="/asset/Rahul Mondal | Full-Stack Engineer.pdf"
+                    download
                     variants={slideInFromRight(1)}
                     className="button-primary font-medium tracking-wide rounded-lg mt-6 px-7 py-3 w-max cursor-pointer"
                 >

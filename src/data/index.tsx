@@ -8,7 +8,7 @@ export const Projects: IProject[] = [
         id: 1,
         title: "Personal Portfolio",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur in officiis possimus consequatur quo, repudiandae cumque ab autem aspernatur",
+            "Personal Portfolio - created with Next.js, Tailwind, Framer-Motion and Resend.",
         src: "/image/project1.png",
         githubUrl: "https://github.com/RahulMj21/portfolio",
         liveUrl: "https://rahulmj21.com",
@@ -79,7 +79,7 @@ export const SkillsData = [
     },
     {
         title: "Learning Now",
-        items: ["/image/golang.svg", "/image/framer-motion.svg"],
+        items: ["/image/golang.svg", "/image/aws.svg"],
     },
 ];
 

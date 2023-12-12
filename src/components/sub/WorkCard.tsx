@@ -18,7 +18,7 @@ const WorkCard = ({
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            variants={slideInFromBottom(0.5)}
+            variants={slideInFromBottom(0.8)}
             className="relative w-[370px] p-3 bg-slate-900 rounded-md group/card"
         >
             <div className="relative">
@@ -36,7 +36,7 @@ const WorkCard = ({
                     <Link
                         href={githubUrl}
                         target="_blank"
-                        className="flex items-center text-xs gap-2 whitespace-nowrap hover:underline"
+                        className="flex items-center text-xs leading-5 gap-2 whitespace-nowrap hover:underline"
                     >
                         <GithubIcon className="fill-purple-600 w-4 h-4 " />
                         View Code
@@ -44,7 +44,7 @@ const WorkCard = ({
                     <Link
                         href={liveUrl}
                         target="_blank"
-                        className="flex items-center text-xs gap-2 whitespace-nowrap hover:underline"
+                        className="flex items-center text-xs leading-5 gap-2 whitespace-nowrap hover:underline"
                     >
                         <EyeIcon className="fill-purple-600 w-5 h-5 " />
                         Live Site
@@ -54,9 +54,7 @@ const WorkCard = ({
             <div className="flex flex-col gap-3 mt-8 mb-4 items-center">
                 <h2 className="text-xl">{title}</h2>
                 <p className="text-zinc-400 text-sm text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Tenetur in officiis possimus consequatur quo, repudiandae
-                    cumque ab autem aspernatur
+                    {description}
                 </p>
             </div>
         </motion.div>

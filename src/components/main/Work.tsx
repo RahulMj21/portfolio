@@ -12,7 +12,7 @@ const Work = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                variants={slideInFromTop(0.5)}
+                variants={slideInFromTop(0.8)}
                 className="text-[2.2rem] sm:text-[3rem] md:text-[3.8rem] font-semibold text-center"
             >
                 <span className="mr-4 bg-gradient-to-br bg-clip-text text-transparent from-purple-600 to-cyan-700">
