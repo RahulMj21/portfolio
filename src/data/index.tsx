@@ -17,7 +17,7 @@ export const Projects: IProject[] = [
         id: 2,
         title: "Productivity App",
         description:
-            "Productivity App created with Next.js, tailwind, trpc, prisma, postgres.[currently work in progress]",
+            "Productivity App created with Next.js, Tailwind, tRPC, Prisma, Postgres.    [currently work in progress]",
         src: "/image/project2.png",
         githubUrl: "https://github.com/RahulMj21/tuneup",
         liveUrl: "https://teunup.vercel.app/",
