@@ -25,10 +25,11 @@ const Skills = () => {
                             {title}
                         </motion.h1>
                         <div className="flex items-center justify-center gap-x-4 gap-y-5 flex-wrap">
-                            {items.map((item, index) => (
+                            {items.map(({ img, name }, index) => (
                                 <SkillCard
-                                    key={item}
-                                    imgSrc={item}
+                                    key={name}
+                                    name={name}
+                                    img={img}
                                     delay={headingDelay + (index + 1) / 20}
                                 />
                             ))}

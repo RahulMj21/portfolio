@@ -17,3 +17,13 @@ export interface IContactInput {
     type: "text" | "email";
     placeholder: string;
 }
+
+export interface ISkill {
+    name: string;
+    img: string;
+}
+
+export interface ISkillData {
+    title: string;
+    items: ISkill[];
+}

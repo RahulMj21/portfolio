@@ -1,7 +1,7 @@
 import GithubIcon from "@/components/icons/GithubIcon";
 import LinkdinIcon from "@/components/icons/LinkdinIcon";
 import TwitterIcon from "@/components/icons/TwitterIcon";
-import { IContactInput, IProject, ISocial } from "@/types";
+import { IContactInput, IProject, ISkillData, ISocial } from "@/types";
 
 export const Projects: IProject[] = [
     {
@@ -34,52 +34,55 @@ export const Socials: ISocial[] = [
     },
 ];
 
-export const SkillsData = [
+export const SkillsData: ISkillData[] = [
     {
         title: "Tech I Know",
         items: [
-            "/image/html.svg",
-            "/image/css.svg",
-            "/image/js.svg",
-            "/image/ts.svg",
-            "/image/react.svg",
-            "/image/nextjs.svg",
-            "/image/tailwind.svg",
-            "/image/mui.svg",
-            "/image/chakra-ui.svg",
-            "/image/framer-motion.svg",
-            "/image/redux.svg",
-            "/image/reactquery.svg",
-            "/image/trpc.svg",
-            "/image/graphql.svg",
-            "/image/nodejs.svg",
-            "/image/golang.svg",
-            "/image/mongodb.svg",
-            "/image/mysql.svg",
-            "/image/postgres.svg",
-            "/image/prisma.svg",
-            "/image/github.svg",
-            "/image/githubactions.svg",
-            "/image/docker.svg",
+            { name: "HTML", img: "/image/html.svg" },
+            { name: "CSS", img: "/image/css.svg" },
+            { name: "Javascript", img: "/image/js.svg" },
+            { name: "Typescript", img: "/image/ts.svg" },
+            { name: "React.js", img: "/image/react.svg" },
+            { name: "Next.js", img: "/image/nextjs.svg" },
+            { name: "TailwindCSS", img: "/image/tailwind.svg" },
+            { name: "Material UI", img: "/image/mui.svg" },
+            { name: "Chakra UI", img: "/image/chakra-ui.svg" },
+            { name: "Framer Motion", img: "/image/framer-motion.svg" },
+            { name: "Redux", img: "/image/redux.svg" },
+            { name: "React Query", img: "/image/reactquery.svg" },
+            { name: "tRPC", img: "/image/trpc.svg" },
+            { name: "GraphQL", img: "/image/graphql.svg" },
+            { name: "Node.js", img: "/image/nodejs.svg" },
+            { name: "Go", img: "/image/golang.svg" },
+            { name: "MongoDB", img: "/image/mongodb.svg" },
+            { name: "MySQL", img: "/image/mysql.svg" },
+            { name: "Postgres", img: "/image/postgres.svg" },
+            { name: "Prisma", img: "/image/prisma.svg" },
+            { name: "Github", img: "/image/github.svg" },
+            { name: "Actions CI/CD", img: "/image/githubactions.svg" },
+            { name: "Docker", img: "/image/docker.svg" },
         ],
     },
     {
         title: "Currently Working With",
         items: [
-            "/image/nextjs.svg",
-            "/image/tailwind.svg",
-            "/image/framer-motion.svg",
-            "/image/reactquery.svg",
-            "/image/trpc.svg",
-            "/image/golang.svg",
-            "/image/postgres.svg",
-            "/image/prisma.svg",
-            "/image/docker.svg",
+            { name: "Next.js", img: "/image/nextjs.svg" },
+            { name: "TailwindCSS", img: "/image/tailwind.svg" },
+            { name: "Framer Motion", img: "/image/framer-motion.svg" },
+            { name: "React Query", img: "/image/reactquery.svg" },
+            { name: "tRPC", img: "/image/trpc.svg" },
+            { name: "Go", img: "/image/golang.svg" },
+            { name: "Postgres", img: "/image/postgres.svg" },
+            { name: "Prisma", img: "/image/prisma.svg" },
+            { name: "Docker", img: "/image/docker.svg" },
         ],
     },
     {
         title: "Learning Now",
-        items: ["/image/golang.svg", "/image/aws.svg"],
+        items: [
+            { name: "Go", img: "/image/golang.svg" },
+            { name: "AWS", img: "/image/aws.svg" },
+        ],
     },
 ];
 
