@@ -20,7 +20,7 @@ export const Projects: IProject[] = [
             "Project Management Application - created with Next.js, Tailwind, tRPC, Prisma, Postgres. [currently work in progress]",
         src: "/image/project2.png",
         githubUrl: "https://github.com/RahulMj21/tuneup",
-        liveUrl: "https://teunup.vercel.app/",
+        liveUrl: "https://teunup.com/",
     },
 ];
 
