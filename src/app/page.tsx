@@ -13,7 +13,7 @@ export default function Home() {
         <main className="h-full w-full">
             <Toaster position="top-right" toastOptions={{ duration: 5000 }} />
             <Header />
-            <div className="flex flex-col gap-20 relative z-[20]">
+            <div className="overflow-x-hidden flex flex-col gap-20 relative z-[20]">
                 <Hero />
                 <Container>
                     <About />

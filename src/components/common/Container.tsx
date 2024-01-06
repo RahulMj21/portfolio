@@ -8,10 +8,7 @@ const Container = ({
 }: ComponentPropsWithoutRef<"div">) => {
     return (
         <div
-            className={cn(
-                "w-[80rem] max-w-full px-5 desktop-px-0 overflow-x-hidden mx-auto relative",
-                className
-            )}
+            className={cn("w-[80rem] max-w-[90%] mx-auto relative", className)}
             {...props}
         >
             {children}
