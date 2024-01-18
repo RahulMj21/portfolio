@@ -25,7 +25,7 @@ const About = () => {
                 <div className="z-1 relative rounded-2xl border-2 border-[#7042f88b] before:absolute before:h-full before:w-full before:bg-gradient-to-br before:from-purple-500 before:to-cyan-500 before:blur-2xl -z-1">
                     <Image
                         src="/image/rahul.jpg"
-                        alt="Rahul Mondal Fullstack Developer"
+                        alt="Rahul Mondal Frontend Engineer"
                         height={0}
                         width={350}
                         className="relative rounded-xl"
@@ -66,7 +66,7 @@ const About = () => {
                 </motion.p>
                 <motion.a
                     target="_blank"
-                    href="/asset/Rahul Mondal | Full-Stack Engineer.pdf"
+                    href="/asset/Rahul_Mondal_Frontend_Engineer.pdf"
                     download
                     variants={slideInFromRight(1)}
                     className="button-primary font-medium tracking-wide rounded-lg mt-6 px-7 py-3 w-max cursor-pointer"
