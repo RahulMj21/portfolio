@@ -25,7 +25,7 @@ const HeroContent = () => {
                     >
                         <SparklesIcon className="text-purple-400 h-5 w-5" />
                         <p className="welcome-text text-[14px] leading-[14px]">
-                            Frontend Engineer
+                            Software Engineer
                         </p>
                     </motion.div>
                     <motion.div
@@ -46,7 +46,7 @@ const HeroContent = () => {
                         variants={slideInFromLeft(0.8)}
                         className="max-w-[37.5rem] text-gray-400"
                     >
-                        I&apos;m a Frontend Engineer. Flexible, hard worker,
+                        I&apos;m a Software Engineer. Flexible, hard worker,
                         ready to learn and contribute to team success. Working
                         confidently with a wide range of technologies.
                     </motion.p>
